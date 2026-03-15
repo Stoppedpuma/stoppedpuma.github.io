@@ -1,0 +1,31 @@
+body {
+    background-image: url("res/bg.svg");
+    background-color: #05050C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.footer {
+    color: #404040;
+    font: 2rem "Noto Sans", Helvetica, Arial, sans-serif;
+    margin-top: auto;
+    padding-bottom: 2rem;
+}
+
+.logo {
+    margin-top: auto;
+    justify-content: center;
+}
+
+.logo img {
+    width: 40vw;
+}
