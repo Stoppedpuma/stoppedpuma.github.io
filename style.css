@@ -58,4 +58,21 @@ body {
     color: #B7E1D3;
     font: 3dvh "Noto Sans", Helvetica, Arial, sans-serif;
     text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+.links a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.2dvh;
+    left: 0;
+    width: 3dvh;
+    height: 0.5dvh;
+    border-radius: 0.5dvh;
+    background-color: #00FFAA; /* `background-color: aquamarine` also looks pretty nice */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.links a:hover::after {
+    opacity: 1;
 }
